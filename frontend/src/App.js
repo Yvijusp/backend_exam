@@ -7,11 +7,16 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #082032
+}
 `;
 
 const Wrapper = styled.div`
   max-width: 1280px;
   margin: 0 auto;
+  color: #fdfdfd;
 
   h1 {
     text-align: center;
@@ -19,12 +24,12 @@ const Wrapper = styled.div`
 
   .container {
     max-width: 600px;
-    background-color: #fdfdfd;
+    background-color: #2c394b;
 
     margin: 20px auto;
     padding: 15px 10px;
 
-    box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 5px -1px rgba(255, 255, 255, 0.8);
     border-radius: 15px;
 
     display: flex;
@@ -37,8 +42,10 @@ const Wrapper = styled.div`
     }
 
     a {
-      border: #666 solid 1px;
-      padding: 5px 15px;
+      font-size: 1.125em;
+      color: #ff4c29;
+      border: #ddd solid 1px;
+      padding: 8px 15px;
       border-radius: 5px;
       display: block;
       width: fit-content;
