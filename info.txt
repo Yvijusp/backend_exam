@@ -1,0 +1,42 @@
+[4:23 PM] Ernestas Rutkauskas
+    
+3. Programavimo aplinkos ir kūrimo proceso valdymas
+
+
+	
+Laikas: 2 val.
+	
+Pradžia: 16:35, pabaiga: 18:45
+	
+Pateikimas vertinimui: Github nuoroda su kodu ir nuoroda į svetainė (kurioje yra endpoints)
+	
+Užduotis:
+  
+  
+  
+    
+      
+      
+        Text
+      
+    
+    
+    
+      Programavimo aplinkos ir kūrimo proceso valdymas
+------------------------------------------------
+Sukurkite REST API, kuris grąžins faktus/juokelius apie Chuck Norris
+/api/jokes/                                     <- grąžins 10 juokelių apie Chuck Norris (duomenys turi būti pateikiami masyve, kaip tekstas t.y. ["","",""...])
+/api/jokes/:amount                      <- grąžins "amount" parametre nurodytą kiekį juokelių apie Chuck Norris (duomenys turi būti pateikiami masyve, kaip tekstas t.y. ["","",""...])
+/api/jokes/:category                    <- grąžins 10 juokelių apie Chuck Norris iš nurodytos "category" (duomenys turi būti pateikiami masyve, kaip tekstas t.y. ["","",""...])
+/api/jokes/:category/:amount    <- grąžins "amount" parametre nurodytą kiekį juokelių apie Chuck Norris iš nurodytos "category" (duomenys turi būti pateikiami masyve, kaip tekstas t.y. ["","",""...])
+Svarbu:
+Duomenis imti iš čia: https://api.chucknorris.io/
+Talpinimas: REST API turi būti patalpintas Heroku arba analogiškame servise
+Talpinimas: Turi būti sukurtas vieno puslapio svetainė, kurioje bus galima rasti visus jūsų REST API routes ir paaikškinus apie juos, panašiai kaip čia: https://api.chucknorris.io/
+    
+    
+  
+  
+
+
+<https://teams.microsoft.com/l/message/19:f3de2663c7234a5a8d40e3426b67d4a0@thread.tacv2/1631712212148?tenantId=08455b90-5d90-4a89-937b-8c2322b2c786&amp;groupId=e539e63d-5319-4bd9-b928-0d958da84432&amp;parentMessageId=1631686829873&amp;teamName=JavaScript (JS4) formalios studijos&amp;channelName=General&amp;createdTime=1631712212148>
