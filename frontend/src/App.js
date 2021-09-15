@@ -42,7 +42,7 @@ const Wrapper = styled.div`
     }
 
     a {
-      font-size: 1.125em;
+      font-size: 1.1em;
       color: #ff4c29;
       border: #ddd solid 1px;
       padding: 8px 15px;
