@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .text-red {
+      color: red;
+    }
+
+    .text-blue {
+      color: blue;
+    }
+    div {
+      color: green;
+    }
+  </style>
+  <body>
+    <div class="text-red text-blue">text</div>
+    <script>
+      const numbers = [8, 9, -6, 5, 2, 1, 4, 7, 51, 6, 77];
+      numbers.sort((a, b) => b - a);
+      const [a, b] = numbers;
+      console.log(b);
+    </script>
+  </body>
+</html>

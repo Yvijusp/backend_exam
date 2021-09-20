@@ -117,9 +117,9 @@ function App() {
         <div className='container'>
           <h2>10 random Chuck Norris jokes by category</h2>
           <a
-            href={`https://chucknorris-api.herokuapp.com/api/jokes/category/${randomCategory}`}
+            href={`https://chucknorris-api.herokuapp.com/api/jokes/${randomCategory}`}
           >
-            https://chucknorris-api.herokuapp.com/api/jokes/category/:category
+            https://chucknorris-api.herokuapp.com/api/jokes/:category
           </a>
           <p>Gets 10 random jokes from a specified category</p>
           <p>Clicking on link here will send you to a random category</p>
@@ -134,9 +134,9 @@ function App() {
         <div className='container'>
           <h2>Random Chuck Norris jokes by category with specified amount</h2>
           <a
-            href={`https://chucknorris-api.herokuapp.com/api/jokes/category/${randomCategory}/${randomNumber}`}
+            href={`https://chucknorris-api.herokuapp.com/api/jokes/${randomCategory}/${randomNumber}`}
           >
-            https://chucknorris-api.herokuapp.com/api/jokes/category/:category/:amount
+            https://chucknorris-api.herokuapp.com/api/jokes/:category/:amount
           </a>
           <p>Gets jokes from specified category and specified amount</p>
           <p>

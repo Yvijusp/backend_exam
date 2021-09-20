@@ -36,7 +36,8 @@ app.get('/api/jokes', async (req, res) => {
 });
 
 // Returning jokes by assigned amount value
-app.get('/api/jokes/:amount', async (req, res) => {
+app.get('/api/jokes/:amount', async (req, res, next) => {
+  if (!Number(req.params.amount)) return next();
   try {
     let jokes = [];
 
@@ -47,7 +48,6 @@ app.get('/api/jokes/:amount', async (req, res) => {
 
       jokes.push(result.value);
     }
-
     res.send(jokes);
   } catch (error) {
     console.log(error);
@@ -55,24 +55,20 @@ app.get('/api/jokes/:amount', async (req, res) => {
 });
 
 // Returning 10 jokes by assigning category
-app.get('/api/jokes/category/:category', async (req, res) => {
+app.get('/api/jokes/:category', async (req, res) => {
   try {
     let jokes = [];
-
     for (let i = 0; i < 10; i++) {
       const result = await fetch(
         `https://api.chucknorris.io/jokes/random?category=${req.params.category}`
       ).then((response) => response.json());
-
       if (result.status === 404)
         return res.status(404).send({
           error: 'Not found',
           message: `No jokes for category ${req.params.category} found`,
         });
-
       jokes.push(result.value);
     }
-
     res.send(jokes);
   } catch (error) {
     console.log(error);
@@ -80,7 +76,7 @@ app.get('/api/jokes/category/:category', async (req, res) => {
 });
 
 // Returning jokes by category using a specified amount
-app.get('/api/jokes/category/:category/:amount', async (req, res) => {
+app.get('/api/jokes/:category/:amount', async (req, res) => {
   try {
     let jokes = [];
 
